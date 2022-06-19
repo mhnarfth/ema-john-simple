@@ -9,6 +9,10 @@
     font-weight: 400;
 }
 
+.product-details{
+    margin-left: 10px;
+}
+
 .btn-regular{
     background-color: goldenrod;
     width: 200px;
@@ -16,4 +20,8 @@
     border: 1px solid rgb(102, 102, 102);
     border-radius: 5px;
     cursor: pointer;
+}
+
+.icon-color{
+    color: gold;
 }
