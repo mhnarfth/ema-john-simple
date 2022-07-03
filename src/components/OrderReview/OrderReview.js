@@ -1,7 +1,7 @@
 import React from "react";
 import useCart from "../../hooks/useCart";
 import useProducts from "../../hooks/useProducts";
-import { deleteFromDb } from "../../utilities/fakedb";
+import { clearTheCart, deleteFromDb } from "../../utilities/fakedb";
 import Cart from "../Cart/Cart";
 import ReviewItem from "../ReviewItem/ReviewItem";
 import { useNavigate } from "react-router-dom";
@@ -18,6 +18,8 @@ const OrderReview = () => {
   };
   const handlePlaceOrder = () => {
     navigate("/placeorder");
+    setCart([]);
+    clearTheCart();
   };
   return (
     <div className="shop-container">
