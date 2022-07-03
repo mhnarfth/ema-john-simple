@@ -3,6 +3,7 @@ import React from "react";
 const ReviewItem = (props) => {
   const { key, name, price, quantity } = props.product;
   const { handleRemove } = props;
+  console.log(props.product);
 
   return (
     <div>
