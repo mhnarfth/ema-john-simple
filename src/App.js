@@ -15,6 +15,7 @@ function App() {
 
       <Routes>
         <Route path="shop" element={<Shop />} />
+        <Route path="/" element={<Shop />} />
         <Route path="review" element={<OrderReview />} />
         <Route path="inventory" element={<Inventory />} />
         <Route path="placeorder" element={<PlaceOrder />} />
