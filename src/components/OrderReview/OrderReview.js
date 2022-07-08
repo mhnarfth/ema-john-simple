@@ -21,11 +21,14 @@ const OrderReview = () => {
     setCart([]);
     clearTheCart();
   };
+
+  console.log(cart);
   return (
     <div className="shop-container">
       <div className="product-container">
         {cart.map((product) => (
           <ReviewItem
+            key={product.key}
             product={product}
             handleRemove={handleRemove}
           ></ReviewItem>
